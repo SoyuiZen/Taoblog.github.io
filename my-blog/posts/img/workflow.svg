@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 150" role="img" aria-label="写作流程：捕捉灵感 → Markdown 成文 → git push 发布">
+  <rect width="640" height="150" rx="14" fill="#f4f4f5"/>
+  <g font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" text-anchor="middle">
+    <rect x="24" y="50" width="150" height="50" rx="10" fill="#18181b"/>
+    <text x="99" y="80" fill="#ffffff">捕捉灵感</text>
+    <rect x="245" y="50" width="150" height="50" rx="10" fill="#18181b"/>
+    <text x="320" y="80" fill="#ffffff">Markdown 成文</text>
+    <rect x="466" y="50" width="150" height="50" rx="10" fill="#2563eb"/>
+    <text x="541" y="80" fill="#ffffff">git push 发布</text>
+  </g>
+  <g stroke="#71717a" stroke-width="2" fill="#71717a">
+    <line x1="174" y1="75" x2="230" y2="75"/>
+    <path d="M227 67 L243 75 L227 83 Z" stroke="none"/>
+    <line x1="395" y1="75" x2="451" y2="75"/>
+    <path d="M448 67 L464 75 L448 83 Z" stroke="none"/>
+  </g>
+</svg>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>关于 · 我的博客</title>
+<meta name="description" content="关于我、关于本站的介绍页面。">
+<meta name="site-name" content="我的博客">
+<meta property="og:title" content="关于 · 我的博客">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script>
+(function () {
+  var t = 'light';
+  try { t = localStorage.getItem('theme'); } catch (e) {}
+  if (!t) {
+    t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+  document.documentElement.dataset.theme = t;
+})();
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">我的博客</a>
+    <nav class="site-nav">
+      <a href="index.html">首页</a>
+      <a href="archive.html">归档</a>
+      <a href="about.html">关于</a>
+    </nav>
+    <button id="theme-toggle" type="button" aria-label="切换明暗主题" title="切换明暗主题">🌙</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <header class="page-head">
+    <h1>关于</h1>
+    <p>关于我，关于本站。</p>
+  </header>
+
+  <section class="about-card">
+    <h2>👤 关于我</h2>
+    <p>你好，我是……（在这里写一段自我介绍：职业、兴趣、正在做的事。直接编辑 about.html 即可。）</p>
+  </section>
+
+  <section class="about-card">
+    <h2>📝 关于本站</h2>
+    <p>本站于 2026 年 10 月上线，用来记录技术笔记、读书摘记与随想碎片。纯静态构建（HTML/CSS/JS），托管于 GitHub Pages，零成本、零依赖。</p>
+  </section>
+
+  <section class="about-card">
+    <h2>✉️ 联系方式</h2>
+    <ul>
+      <li>GitHub：<a href="https://github.com/你的用户名" target="_blank" rel="noopener noreferrer">github.com/你的用户名</a></li>
+      <li>邮箱：<a href="mailto:you@example.com">you@example.com</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-links">
+      <a href="archive.html">归档</a>
+      <a href="about.html">关于</a>
+    </div>
+    <p>© <span id="year">2026</span> 我的博客 · 由 <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a> 驱动</p>
+  </div>
+</footer>
+
+<script src="js/blog.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

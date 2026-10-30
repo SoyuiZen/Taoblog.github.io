@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 部署后请把 your-username 替换为你的 GitHub 用户名（或自定义域名）；每发布新文章记得同步添加 -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://your-username.github.io/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://your-username.github.io/archive.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://your-username.github.io/about.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://your-username.github.io/post.html?p=2026-10-30-hello-world</loc><priority>0.7</priority></url>
+  <url><loc>https://your-username.github.io/post.html?p=2026-10-28-why-i-blog</loc><priority>0.7</priority></url>
+  <url><loc>https://your-username.github.io/post.html?p=2026-10-25-my-writing-workflow</loc><priority>0.7</priority></url>
+</urlset>

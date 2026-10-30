@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>归档 · 我的博客</title>
+<meta name="description" content="我的博客 —— 所有文章归档，按年份排列，支持搜索与标签过滤。">
+<meta name="site-name" content="我的博客">
+<meta property="og:title" content="归档 · 我的博客">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script>
+(function () {
+  var t = 'light';
+  try { t = localStorage.getItem('theme'); } catch (e) {}
+  if (!t) {
+    t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+  document.documentElement.dataset.theme = t;
+})();
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">我的博客</a>
+    <nav class="site-nav">
+      <a href="index.html">首页</a>
+      <a href="archive.html">归档</a>
+      <a href="about.html">关于</a>
+    </nav>
+    <button id="theme-toggle" type="button" aria-label="切换明暗主题" title="切换明暗主题">🌙</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <header class="page-head">
+    <h1>归档</h1>
+    <p>所有文章，按年份排列。支持搜索标题、摘要与标签。</p>
+  </header>
+
+  <div class="archive-tools">
+    <input type="search" id="search" placeholder="搜索文章…" aria-label="搜索文章">
+  </div>
+  <p id="tag-chip"></p>
+  <p id="count" class="count"></p>
+  <div id="archive"></div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-links">
+      <a href="archive.html">归档</a>
+      <a href="about.html">关于</a>
+    </div>
+    <p>© <span id="year">2026</span> 我的博客 · 由 <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a> 驱动</p>
+  </div>
+</footer>
+
+<script src="js/blog.js"></script>
+<script src="js/main.js"></script>
+<script src="js/archive.js"></script>
+</body>
+</html>
